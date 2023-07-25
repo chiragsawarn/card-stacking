@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Layers Animation</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </header>
+    <section class="container">
+        <ul id="cards">
+            <li class="card" id="card1">
+                <div class="card-body">
+                    <h2>Card 1</h2>
+                </div>
+            </li>
+            <li class="card" id="card2">
+                <div class="card-body">
+                    <h2>Card 2</h2>
+                </div>
+            </li>
+            <li class="card" id="card3">
+                <div class="card-body">
+                    <h2>Card 3</h2>
+                </div>
+            </li>
+            <li class="card" id="card4">
+                <div class="card-body">
+                    <h2>Card 4</h2>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section style="height: 20rem;">
+
+    </section>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+    </script>
+</body>
+
+</html>
